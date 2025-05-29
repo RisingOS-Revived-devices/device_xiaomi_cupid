@@ -13,6 +13,7 @@ include vendor/xiaomi/cupid/BoardConfigVendor.mk
 DEVICE_PATH := device/xiaomi/cupid
 
 # Audio
+AUDIO_FEATURE_ENABLED_CIRRUS_CALIBRATION_RESISTANCE := true
 AUDIO_FEATURE_ENABLED_ULTRASOUND_PROXIMITY := true
 
 # Properties
