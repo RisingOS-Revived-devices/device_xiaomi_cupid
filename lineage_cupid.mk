@@ -10,6 +10,21 @@ $(call inherit-product, device/xiaomi/cupid/device.mk)
 # Inherit from common lineage configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOSAdd commentMore actions
+RISING_MAINTAINER=KernelPanix
+RisingMaintainer="KernelPanix"
+RISING_PACKAGE_TYPE := GAPPS
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := false
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+
+# RisingOS GMS build flags
+WITH_GMS := true
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_PREBUILT_BCR := true
+
 PRODUCT_NAME := lineage_cupid
 PRODUCT_DEVICE := cupid
 PRODUCT_MANUFACTURER := Xiaomi
